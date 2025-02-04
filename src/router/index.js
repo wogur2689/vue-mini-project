@@ -7,7 +7,7 @@ const routes = [
         component: () => import("@/pages/Home.vue")
     },
     { 
-        path: '/',
+        path: '/board',
         name: "board",
         component: () => import("@/pages/board/list.vue")
     },
