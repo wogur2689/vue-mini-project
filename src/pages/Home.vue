@@ -3,26 +3,6 @@
 </script>
 
 <template>
-    <div id="link">
-        <a href="https://www.naver.com" target="_blank">네이버</a> |
-        <a href="https://www.daum.net" target="_blank">다음</a> |
-        <a href="https://www.youtube.com" target="_blank">유튜브</a> |
-        <a href="https://www.facebook.com" target="_blank">페이스북</a> |
-        <a href="http://www.dongyang.ac.kr" target="_blank">동양미래대학교</a> |
-        <a href="http://www.kosaf.go.kr" target="_blank">한국장학재단</a> |
-        <a href="http://www.google.co.kr" target="_blank">구글</a> |
-        <a href="http://www.codeit.kr" target="_blank">코드잇</a> |
-        <a href="http://www.instagram.com" target="_blank">인스타그램</a> |
-        <a href="http://www.kakaocorp.com/service/KakaoTalk?lang=ko" target="_blank">카카오톡</a> |
-        <a href="http://line.me" target="_blank">라인</a> |
-        <a href="http://twitter.com" target="_blank">트위터</a> |
-        <a href="http://www.zoom.us" target="_blank">ZOOM</a> |
-        <a href="https://github.com" target="_blank">github</a> |
-        <a href="https://comento.kr" target="_blank">코멘토</a> |
-        <a href="https://www.comcbt.com" target="_blank">cbt</a> |
-        <a href="https://www.codingworldnews.com" target="_blank">코딩월드뉴스</a>
-    </div>
-<div id="container">
 	<div id="header">
 		<h1 class="header_text">sweet my home.</h1>
 		<h4 class="header_text">안녕하세요!</h4>
@@ -146,6 +126,7 @@
 		</div>
 		
 	
+        <!-- 소스 변경 필요 -->
 		<div id="contents-resume">
 			<h2 align="center">코로나 현황(누적)</h2>
 			<div class="covid">
@@ -158,6 +139,7 @@
 			<div class="covid_data">
             </div>
 		</div>
+        <!-- 소스 변경 필요 -->
 		<div class="sidebar-Timer">
 		<b>스톱워치</b>
             <strong>
@@ -190,12 +172,7 @@
 
 			</table>
 		</div>  <!--end of gugudan--> 
-	<div id="footer" align="center">
-		<h2>이용해주셔서 감사합니다!</h2>
-		<input type="button" value="홈페이지 닫기" onclick="window.close()">
-		<p>제작자: 길재혁</p>
-	</div>
-</div>
+
 </template>
 
 <style scoped>

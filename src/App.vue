@@ -6,10 +6,10 @@ import Footer from '@/layouts/Footer.vue';
 
 <template>
     <Header/>
-        <main>
-            <router-view />
-        </main>
-    <Footer/>
+    <div id="container">
+        <router-view />
+        <Footer/>
+    </div>
 </template>
 
 <style scoped>
