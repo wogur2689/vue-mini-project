@@ -1,4 +1,4 @@
-# vue-mini-project - 주제 정하는중
+# vue-mini-project - 주제 : php 나만의 홈페이지 Vue 마이그레이션
 ## Project Setup
 
 ```sh

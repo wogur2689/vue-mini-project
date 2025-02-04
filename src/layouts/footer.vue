@@ -6,7 +6,3 @@
         푸터
     </footer>
 </template>
-
-<style scoped>
-
-</style>

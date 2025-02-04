@@ -6,7 +6,3 @@
         헤더
     </header>
 </template>
-
-<style scoped>
-
-</style>
