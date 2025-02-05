@@ -1,4 +1,6 @@
 <script setup>
+import Timer from '@/components/home/Timer.vue';
+
 
 </script>
 
@@ -140,21 +142,7 @@
             </div>
 		</div>
         <!-- 소스 변경 필요 -->
-		<div class="sidebar-Timer">
-		<b>스톱워치</b>
-            <strong>
-                <span id="hour">00</span>
-                <span>:</span>
-                <span id="minute">00</span>
-                <span>:</span>
-                <span id="second">00</span>
-                <span>.</span>
-                <span id="teMilli">00</span>
-            </strong>
-            <button id="btnsta">시작</button>
-            <button id="btnsto">멈춤</button>
-            <button id="btnres">초기화</button>
-		</div>
+		<Timer/>
 		
 		<div id="contents-gugudan" align="center">
 			<h5>구구단</h5>

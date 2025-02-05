@@ -123,38 +123,6 @@ a {
     margin-left: 5px;
 }
 
-.sidebar-Timer {
-    background: -webkit-linear-gradient(top, #ae4eff, #3567ff);
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 260px;
-    height: 180px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.sidebar-Timer b {
-    font-size: 30px;
-}
-
-.sidebar-Timer strong {
-    display: block;
-    font-size: 30px;
-}
-
-.sidebar-Timer button {
-    width: 60px;
-    height: 50px;
-    font-size: 15px;
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
-    background: black;
-    border: solid 1px black;
-}
-
 /* covid-19 */
 .covid {
     width: 100%;
