@@ -1,71 +1,65 @@
 <script setup>
-let h = 0; //시 
-let m = 0; //분
-let s = 0; //초
-let t = 0; //밀리
-let saveH = document.getElementById("hour"); //현재 시
-let saveM = document.getElementById("minute"); //현재 분
-let saveS = document.getElementById("second"); //현재 초
-let saveT = document.getElementById("teMilli"); //현재 밀리
-const btnStart = document.getElementById("btnsta"); //시작버튼
-const btnStop = document.getElementById("btnsto"); //멈춤버튼
-const btnReset = document.getElementById("btnres"); //초기화버튼
-let intervalId;
+import { ref } from 'vue';
 
-btnStart.onclick(() => {
-    clearInterval(intervalId)
-    intervalId = setInterval(operateTimer, 10)
-});
-btnStop.onclick = function () {
-    clearInterval(intervalId)
+let h = ref(0); //시 
+let m = ref(0); //분
+let s = ref(0); //초
+let t = ref(0); //밀리
+let intervalId = null;
+
+const startTimer = () => {
+    clearInterval(intervalId);
+    intervalId = setInterval(operateTimer, 10);
+};
+
+const stopTimer = () => {
+    clearInterval(intervalId);
 }
-btnReset.onclick = function () {
+
+const resetTimer = () => {
     clearInterval(intervalId)
-    h = 0; m = 0; s = 0; t = 0;
-    saveH.textContent = "00";
-    saveM.textContent = "00";
-    saveS.textContent = "00";
-    saveT.textContent = "00";
+    h.value = 0;
+    m.value = 0;
+    s.value = 0;
+    t.value = 0;
 }
+
 function operateTimer() {
-    t++;
-    saveT.textContent = t > 9 ? t : '0' + t;
-    if (t > 99) {
-        s++;
-        saveS.textContent = s > 9 ? s : '0' + s;
-        t = 0;
-        saveT.textContent = "00";
+    t.value++;
+    if (t.value > 99) {
+        s.value++;
+        t.value = 0;
     }
-    if (s > 59) {
-        m++;
-        saveM.textContent = m > 9 ? m : '0' + m;
-        s = 0;
-        saveS.textContent = "00";
+    if (s.value > 59) {
+        m.value++;
+        s.value = 0;
     }
-    if (m > 59) {
-        h++;
-        saveH.textContent = h > 9 ? h : '0' + h;
-        m = 0;
-        saveM.textContent = "00";
+    if (m.value > 59) {
+        h.value++;
+        m.value = 0;
     }
 }
+
+const formatTime = (value) => {
+    return String(value).padStart(2, '0'); // 2자리 형식으로 변환
+};
 </script>
 
 <template>
     <div class="sidebar-Timer">
         <b>스톱워치</b>
         <strong>
-            <span id="hour">00</span>
+            <span id="hour">{{ formatTime(h) }}</span>
             <span>:</span>
-            <span id="minute">00</span>
+            <span id="minute">{{ formatTime(m) }}</span>
             <span>:</span>
-            <span id="second">00</span>
+            <span id="second">{{ formatTime(s) }}</span>
             <span>.</span>
-            <span id="teMilli">00</span>
+            <span id="teMilli">{{ formatTime(t) }}</span>
         </strong>
-        <button id="btnsta">시작</button>
-        <button id="btnsto">멈춤</button>
-        <button id="btnres">초기화</button>
+        <button ref="btnsta" @click="startTimer">시작</button>
+        <button ref="btnsto" @click="stopTimer">멈춤</button>
+        <button ref="btnres" @click="resetTimer">초기화</button>
     </div>
 </template>
 
