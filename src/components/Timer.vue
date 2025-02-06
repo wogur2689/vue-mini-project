@@ -58,8 +58,8 @@ const formatTime = (value) => {
             <span id="teMilli">{{ formatTime(t) }}</span>
         </strong>
         <button ref="btnsta" @click="startTimer">시작</button>
-        <button ref="btnsto" @click="stopTimer">멈춤</button>
-        <button ref="btnres" @click="resetTimer">초기화</button>
+        <button ref="btnsto" @click="stopTimer">멈춤</button> 
+        <button ref="btnres" @click="resetTimer">초기화</button> 
     </div>
 </template>
 

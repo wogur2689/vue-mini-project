@@ -37,6 +37,8 @@ a {
 
 #contents {
     width: 780px;
+    height: 130px;
+    line-height: 130px;
     padding-bottom: 20px;
     margin-bottom: 10px;
     float: left;
@@ -121,127 +123,4 @@ a {
     padding: 0px;
     margin-bottom: 10px;
     margin-left: 5px;
-}
-
-/* covid-19 */
-.covid {
-    width: 100%;
-    background-color: aqua;
-    font-weight: bold;
-    margin: 0px;
-}
-
-.covid_19 {
-    display: inline-block;
-    border-right: solid black 1px;
-    width: 150px;
-    text-align: center;
-    margin: 0px;
-}
-
-.covid_data {
-    width: 100%;
-    background-color: chartreuse;
-    margin: 0px;
-}
-
-resultcode {
-    display: none;
-}
-
-resultmsg {
-    display: none;
-}
-
-accdefrate {
-    /* 누적 확진률 */
-    display: none;
-}
-
-accexamcnt {
-    /* 누적 검사 수 */
-    display: none;
-}
-
-accexamcompcnt {
-    /* 누적 검사 완료 수 */
-    display: none;
-}
-
-carecnt {
-    /* 치료 중인 환자 수 */
-    display: inline-block;
-    border-right: solid black 1px;
-    width: 150px;
-    text-align: center;
-}
-
-clearcnt {
-    /* 격리 해제 수 */
-    display: inline-block;
-    border-right: solid black 1px;
-    width: 155px;
-    text-align: center;
-}
-
-createdt {
-    /* 등록 일 시분초 */
-    display: none;
-}
-
-deathcnt {
-    /*사망자수*/
-    display: inline-block;
-    border-right: solid black 1px;
-    width: 156px;
-    text-align: center;
-}
-
-decidecnt {
-    /* 확진자수 */
-    display: inline-block;
-    border-right: solid black 1px;
-    width: 155px;
-    text-align: center;
-}
-
-seq {
-    display: none;
-}
-
-examcnt {
-    display: none;
-}
-
-resutlnegcnt {
-    display: none;
-}
-
-stateDt {
-    /* 기준일*/
-    display: inline-block;
-    width: 156px;
-    text-align: center;
-}
-
-statetime {
-    /*기준시간*/
-    display: none;
-}
-
-updatedt {
-    /*수정일시분초*/
-    display: none;
-}
-
-numofrows {
-    display: none;
-}
-
-pageno {
-    display: none;
-}
-
-totalcount {
-    display: none;
 }

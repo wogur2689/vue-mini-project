@@ -15,5 +15,6 @@ footer {
     border: 1px solid #ccc;
     clear:both;
     padding:20px;
+    text-align: center;
 }    
 </style>
