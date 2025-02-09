@@ -2,7 +2,9 @@
 import Timer from '@/components/Timer.vue';
 import TimeTable from '@/components/TimeTable.vue';
 
+import { ref } from 'vue';
 
+const danList = ref([2, 3, 4, 5, 6, 7, 8, 9]); // 구구단의 단 리스트
 </script>
 
 <template>
@@ -57,16 +59,11 @@ import TimeTable from '@/components/TimeTable.vue';
 			<h5>구구단</h5>
 			<table border='1' width='1000px'>
 			<tr bgcolor='#ccccc' align='center'>
-				<td>2단</td>
-				<td>3단</td>
-				<td>4단</td>
-				<td>5단</td>
-				<td>6단</td>
-				<td>7단</td>
-				<td>8단</td>
-				<td>9단</td>
-			</tr>
-
+                <td v-for="(dan, index) in danList" :key="index">{{ dan }}단</td>
+            </tr>
+            <tr v-for="i in 9" :key="i">
+                <td v-for="dan in danList" :key="dan">{{ dan }} x {{ i }} = {{ dan * i }}</td>
+            </tr>
 			</table>
 		</div>  <!--end of gugudan--> 
 
