@@ -1,4 +1,5 @@
 <script setup>
+import HeaderDiv from '@/components/HeaderDiv.vue';
 import Timer from '@/components/Timer.vue';
 import TimeTable from '@/components/TimeTable.vue';
 
@@ -8,10 +9,7 @@ const danList = ref([2, 3, 4, 5, 6, 7, 8, 9]); // 구구단의 단 리스트
 </script>
 
 <template>
-	<div id="header">
-		<h1 class="header_text">sweet my home.</h1>
-		<h4 class="header_text">안녕하세요!</h4>
-	</div>
+	<HeaderDiv/>
 		<div id="contents" align="center">
 			<!-- <img src="images/covid-19.jpg" width="780" height="100"><br> -->
 			<form method=get action="https://www.google.com/search" target="_blank" accept-charset="utf-8" onsubmit="emulAcceptCharset(this)">

@@ -24,17 +24,6 @@ a {
     margin-right: auto;
 }
 
-#header {
-    background: red;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.header_text {
-    Color: black;
-    text-align: center;
-}
-
 #contents {
     width: 780px;
     height: 130px;
