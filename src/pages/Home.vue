@@ -1,7 +1,5 @@
 <script setup>
 import HeaderDiv from '@/components/HeaderDiv.vue';
-import Timer from '@/components/Timer.vue';
-import TimeTable from '@/components/TimeTable.vue';
 
 import { ref } from 'vue';
 
